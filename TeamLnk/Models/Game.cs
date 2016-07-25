@@ -12,25 +12,19 @@ namespace TeamLnk.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class User
+    public partial class Game
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public User()
+        public Game()
         {
-            this.PlayerSystems = new HashSet<PlayerSystem>();
+            this.SystemGames = new HashSet<SystemGame>();
         }
     
-        public int PlayerID { get; set; }
-        public string FName { get; set; }
-        public string LName { get; set; }
-        public string Email { get; set; }
-        public string Region { get; set; }
-        public string Password { get; set; }
-        public string Gamertag { get; set; }
-        public string SteamID { get; set; }
-        public string PlaystationID { get; set; }
+        public int GameID { get; set; }
+        public string Title { get; set; }
+        public int MaxPartySize { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PlayerSystem> PlayerSystems { get; set; }
+        public virtual ICollection<SystemGame> SystemGames { get; set; }
     }
 }

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TeamLnk.Models
+namespace TeamLnk
 {
     using System;
     using System.Collections.Generic;

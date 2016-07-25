@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="87cd7c95e1594ae28c24cea323e9bb65" Name="Diagram1">
+        <EntityTypeShape EntityType="UserDBModel.Game" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="UserDBModel.PlayerSystem" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UserDBModel.SystemGame" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="UserDBModel.System" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="UserDBModel.User" Width="1.5" PointX="0.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="UserDBModel.database_firewall_rules" Width="1.5" PointX="5.75" PointY="2.125" IsExpanded="true" />
+        <AssociationConnector Association="UserDBModel.FK_SystemGames_Game" ManuallyRouted="false" />
+        <AssociationConnector Association="UserDBModel.FK_PlayerSystems_Systems" ManuallyRouted="false" />
+        <AssociationConnector Association="UserDBModel.FK_PlayerSystems_ToTable" ManuallyRouted="false" />
+        <AssociationConnector Association="UserDBModel.FK_SystemGames_Systems" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
